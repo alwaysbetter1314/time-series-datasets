@@ -1,12 +1,15 @@
 # -*- coding: utf-8 -*-
-# __file__name:binance-fetch-ohlcv-to-csv.py
+# 获取指定时间区间内的虚拟玩具价格
+# 用法: python3 get_data.py --type BTC/USDT
+# 或者任意组合都行
+# 输出文件：${args.type}.csv ， 比如上面输出BTC-USDT.csv , (已经把/替换为-, 防止路径字符)
 import os
 import time
 
 import pandas as pd
 
-os.environ["http_proxy"] = "http://127.0.0.1:1001"
-os.environ["https_proxy"] = "http://127.0.0.1:1001"
+# os.environ["http_proxy"] = "http://127.0.0.1:1001"
+# os.environ["https_proxy"] = "http://127.0.0.1:1001"
 # -----------------------------------------------------------------------------
 
 root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
