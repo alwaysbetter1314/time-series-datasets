@@ -7,3 +7,6 @@
 # columns
 - timestamp or fomat-time.
 - all kinds of price-type（最高价，最低价）
+
+# 免责声明
+- 数据是别人接口给出的，有事没事都关我屁事。
